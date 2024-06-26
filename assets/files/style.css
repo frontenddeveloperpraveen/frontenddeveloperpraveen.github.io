@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  font-weight: bold;
+  font-size: medium;
+}
+
+#cheapest {
+  position: relative;
+}
+
+#cheapest::after {
+  position: absolute;
+  content: "Cheapest";
+  top: 0;
+  right: 0;
+  padding: 3px 5px;
+  border-bottom-left-radius: 10px;
+  /* border-bottom-right-radius: 10px; */
+  text-align: center;
+  font-weight: bold;
+  background-color: #71a92c;
+  color: white;
+}

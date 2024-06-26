@@ -1,0 +1,530 @@
+<!doctype html>
+<html>
+<!-- 
+Product Description
+Author : Praveen KR 
+LinkedIn : https://www.linkedin.com/in/mepraveenkr/
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>VCABS - Cab for All</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon"
+        href="https://www.bing.com/th?id=OIP.VUqVWdisoVcUuyjY053K7QHaHa&w=206&h=206&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+        type="image/x-icon">
+    <link rel="stylesheet" href="assets/files/style.css">
+
+</head>
+
+<body>
+    <nav class="flex justify-between px-2 items-center border b-1 pb-1 bg-white sticky top-0 z-40">
+        <img src="assets/logo.png" alt="logo" class="w-24 p-2">
+        <div class="tools flex gap-20 items-center md:flex hidden ">
+            <a href="#">Home</a>
+            <a href="#aboutus">About</a>
+            <a href="#contact-us">Contact</a>
+        </div>
+        <button
+            class="border border-red-yellow-200 rounded-lg p-2 hover:bg-indigo-600 hover:text-white transition  md:block hidden">Book
+            Now</button>
+        <i class="fa-solid fa-bars lg:hidden md:hidden px-5 text-lg" onclick="dialog_box()"></i>
+    </nav>
+    <div class="fixed inset-0 bg-white hidden md:hidden z-50 h-[100vh] overflow-y-hidden" id="mob-view-burger">
+        <div class="nav-bar flex justify-between px-2 items-center border-b-[1px]">
+            <img src="assets/logo.png" alt="logo" class="w-24 p-2">
+            <i class="fa-solid fa-xmark px-5 text-lg" style="font-size: 25px;" onclick="dialog_box()"></i>
+        </div>
+        <div class="mobile-items flex flex-col gap-12 text-2xl mx-4 my-10 ">
+            <a href="#home" class="hover:text-gray-500" onclick="closeBanner()">Home</a>
+            <a href="#aboutus" class="hover:text-gray-500" onclick="closeBanner()">About</a>
+            <a href="#contact-us" class="hover:text-gray-500" onclick="closeBanner()">Contact</a>
+            <button
+                class="border border-red-yellow-200 rounded-lg p-2 bg-indigo-600 text-white transition hover:bg-indigo-500">Book
+                Now</button>
+            <img src="assets/mobilebanner.jpg" alt="" class="rounded-md">
+        </div>
+    </div>
+    </div>
+
+    <section id="home" class="py-1 px-4">
+        <div class="container flex flex-wrap items-center justify-center mx-auto mt-10 md:px-12 md:flex-rows">
+            <div class="mb-14 lg:mb-0 lg:w-1/2 order-2 md:order-1 md:mt-0 mt-5">
+                <h1
+                    class="text-center max-w-xl text-[2.1rem] leading-none text-gray-900 lg:text-4xl md:text-left lg:text-left lg:leading-tight mb-5 font-sans font-semibold ">
+                    Premium Taxi Service for VITB and Beyond</h1>
+                <p class="max-w-xl text-center text-gray-500 lg:text-left lg:max-w-md">Whether it's a short ride to
+                    class or a longer trip across town, Vcab ensures a stress-free and enjoyable journey. Our dedicated
+                    drivers and modern fleet are just a click away.
+                </p>
+                <div class="flex justify-center mt-8 lg:justify-start gap-12">
+                    <button
+                        class="text-white bg-indigo-600 font-medium rounded-lg px-5 py-4 text-center hover:bg-indigo-500 hover:drop-shadow-md trasistion duration-300 ease-in-out">Book
+                        a Ride</button>
+                    <a href="#contact-us"><button
+                            class=" text-gray-900 bg-gray-200 font-medium rounded-lg px-5 py-4 text-center hover:bg-gray-300 hover:drop-shadow-md trasistion duration-300 ease-in-out">Contact
+                            us</button></a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center rounded-lg items-center bg-white lg:mt-10 order-1 md:order-2">
+                <img src="assets/sidee.png" alt="Taxi-hero-image" class="mx-auto rounded-xl " width="80%">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="mt-[3.3rem] mb-[5%]">
+        <div class="mx-auto flex justify-center gap-4 ">
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 19.5L7 14.5M12 19.5L17 14.5M12 19.5L12 13M12 9.5C12 7.83333 13 4.5 17 4.5" stroke="#1C274C"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p class="text-xl">Price Quotation</p>
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 19.5L17 14.5M12 19.5L7 14.5M12 19.5L12 13M12 9.5C12 7.83333 11 4.5 7 4.5" stroke="#1C274C"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <main class="flex flex-wrap justify-evenly mt-10 md:flex-row flex-col md:gap-0 gap-7">
+            <input type="text"
+                class="px-5 py-1 border rounded-md md:w-1/5 md:h-16 hover:border hover:border-gray-900 w-88 md:mx-0 mx-5 h-16"
+                list='places' placeholder="🔷 Choose starting point.." required id="startingPoint">
+            <input type="text"
+                class="px-5 py-1 border rounded-md md:w-1/5 md:h-16 hover:border hover:border-gray-900 w-88 md:mx-0 mx-5 h-16"
+                list='places' placeholder="🔶 Choose Destination.." required id="destination">
+            <button onclick="calculateFare()"
+                class="text-white bg-indigo-600 font-medium rounded-lg px-6 py-0 text-center hover:bg-indigo-500 hover:drop-shadow-md trasistion duration-300 ease-in-out w-88 md:mx-0 mx-5 h-16">Calculate
+                Fare</button>
+            <datalist id="places">
+                <option value="VITB College"></option>
+                <option value="Sehore"></option>
+                <option value="Bhopal"></option>
+                <option value="Astra"></option>
+                <option value="Diwas"></option>
+                <option value="Indore"></option>
+            </datalist>
+        </main>
+
+        <div class="search-result mx-10 lg:mx-3 mt-16 hidden " id="fareResult">
+            <div class="flex md:w-50 md:justify-center md:gap-48 text-lg mb-10  items-center w-full justify-evenly ">
+                <span><i class="fa-solid fa-location-dot"></i>
+                    <b id="startingLocation">Bhopal</b>
+                </span>
+                <i class="fa-solid fa-car-side"></i>
+                <span><i class="fa-solid fa-map-pin"></i>
+                    <b id="destinationLocation">Indore</b>
+                </span>
+            </div>
+            <div class="results flex justify-evenly flex-wrap md:flex-row flex-col  md:gap-30 lg:gap-1 gap-10 relative">
+                <div class="lg:w-1/6 md:w-1/3 w-90 border px-3 py-4  rounded-md relative pb-10 lg:pb-0">
+                    <h5 class="font-bold vehicle-name">Maruti Ertiga</h5>
+                    <img class="mx-auto"
+                        src="https://th.bing.com/th/id/R.133bde7c87a8145c08fa269dbe914566?rik=twFUX8lNr3%2fkBg&riu=http%3a%2f%2fwww.sagmart.com%2fuploads%2f2018%2f11%2f22%2fproduct_1%2fMaruti-Ertiga-ZXI-Plus.jpg&ehk=1FbY4%2fSibNQRxpVovOt17L5qAm6TLjRl%2btvA%2fD81aDQ%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+                        alt="" height="60px">
+                    <div class="vehicle-spec flex justify-between mt-4 items-center">
+                        <span>
+
+                            <i class="fa-solid fa-person text-blue-700 text-xl"></i>
+                            <b class="text-md">7</b>
+                        </span>
+                        <span>
+                            <button type="button"
+                                class="hover:bg-indigo-500 hover:drop-shadow-md trasistion duration-300 ease-in-out bg-indigo-600 px-4 py-1 rounded-md text-white">BOOK</button>
+                        </span>
+                        <span>
+                            <b><i class="fa-solid fa-indian-rupee-sign"></i></b>
+                            <b id="ertiga-fare"></b>
+                        </span>
+                    </div>
+                    <div class="text-sm absolute bottom-2">
+                        <i class="fa-solid fa-square"></i>
+                        <b>Toll Included</b>
+                    </div>
+                </div>
+                <div class="lg:w-1/6 md:w-1/3 w-90 border px-3 py-4 rounded-md relative pb-10 lg:pb-0">
+                    <h5 class="font-bold vehicle-name">Maruti Suzuki Alto 800</h5>
+                    <img class="mx-auto"
+                        src="https://th.bing.com/th/id/R.0a70c93cc6dcc81661078747bc4a9cc4?rik=lwiiImmqtAwm5w&riu=http%3a%2f%2fwww.autosarena.com%2fwp-content%2fuploads%2f2016%2f05%2fMaruti-Suzuki-Alto-800-Superior-White.png&ehk=aEBUZIxBqD3apL6Fs1lA2XzJodnd4nKa2maaCE01%2bDg%3d&risl=&pid=ImgRaw&r=0"
+                        alt="">
+                    <div class="vehicle-spec flex justify-between mt-4 items-center">
+                        <span>
+
+                            <i class="fa-solid fa-person text-blue-700 text-xl"></i>
+                            <b class=" text-md">4</b>
+                        </span>
+                        <span>
+                            <button type="button"
+                                class="hover:bg-indigo-500 hover:drop-shadow-md trasistion duration-300 ease-in-out bg-indigo-600 px-4 py-1 rounded-md text-white">BOOK</button>
+                        </span>
+                        <span>
+                            <b><i class="fa-solid fa-indian-rupee-sign"></i></b>
+                            <b id="alto-fare"></b>
+                        </span>
+                        <div class="text-sm absolute bottom-2">
+                            <i class="fa-solid fa-square"></i>
+                            <b>Toll Not Included</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/6 md:w-1/3 w-90 border px-3 py-4 rounded-md" id="cheapest">
+                    <h5 class="font-bold vehicle-name">Auto Rickshaw</h5>
+                    <img src="https://tiimg.tistatic.com/fp/1/008/062/bajaj-re-compact-diesel-auto-rickshaw-with-engine-210-cc-and-5-seating-capacity-613.jpg"
+                        class="mx-auto" alt="">
+                    <div class="vehicle-spec flex justify-between mt-4 items-center">
+                        <span>
+
+                            <i class="fa-solid fa-person text-blue-700 text-xl"></i>
+                            <b class=" text-md">3</b>
+                        </span>
+                        <span>
+                            <button type="button"
+                                class="hover:bg-indigo-500 hover:drop-shadow-md trasistion duration-300 ease-in-out bg-indigo-600 px-4 py-1 rounded-md text-white">BOOK</button>
+                        </span>
+                        <span>
+                            <b><i class="fa-solid fa-indian-rupee-sign"></i></b>
+                            <b id="auto-fare"></b>
+                        </span>
+                    </div>
+                </div>
+                <div class="lg:w-1/6 md:w-1/3 w-90 border px-3 py-4 rounded-md relative pb-10 lg:pb-0">
+                    <h5 class="font-bold vehicle-name">Maruti Suzuki Eeco</h5>
+                    <img src="https://th.bing.com/th/id/OIP.Y1z6IEzZPdv-uIDletUxRAHaEV?rs=1&pid=ImgDetMain" alt=""
+                        class="mx-auto">
+                    <div class="vehicle-spec flex justify-between mt-4 items-center">
+                        <span>
+
+                            <i class="fa-solid fa-person text-blue-700 text-xl"></i>
+                            <b class=" text-md">7</b>
+                        </span>
+                        <span>
+                            <button type="button"
+                                class="hover:bg-indigo-500 hover:drop-shadow-md trasistion duration-300 ease-in-out bg-indigo-600 px-4 py-1 rounded-md text-white">BOOK</button>
+                        </span>
+                        <span>
+                            <b><i class="fa-solid fa-indian-rupee-sign"></i></b>
+                            <b id="eeco-fare"></b>
+                        </span>
+                    </div>
+                    <div class="text-sm absolute bottom-2">
+                        <i class="fa-solid fa-square"></i>
+                        <b>Toll Included</b>
+                    </div>
+                </div>
+                <div class="lg:w-1/6 md:w-1/3 w-90 border px-3 py-4 rounded-md relative pb-10 lg:pb-0">
+                    <h5 class="font-bold vehicle-name">Maruti Suzuki Omni</h5>
+                    <img src="https://compare.pricesofindia.com/src/cars/maruti-suzuki-omni-8-seater.jpg" alt=""
+                        class="mx-auto">
+                    <div class="vehicle-spec flex justify-between mt-4 items-center">
+                        <span>
+
+                            <i class="fa-solid fa-person text-blue-700 text-xl"></i>
+                            <b class=" text-md">7</b>
+                        </span>
+                        <span>
+                            <button type="button"
+                                class="hover:bg-indigo-500 hover:drop-shadow-md trasistion duration-300 ease-in-out bg-indigo-600 px-4 py-1 rounded-md text-white">BOOK</button>
+                        </span>
+                        <span>
+                            <b><i class="fa-solid fa-indian-rupee-sign"></i></b>
+                            <b id="omni-fare"></b>
+                        </span>
+                    </div>
+                    <div class="text-sm absolute bottom-2">
+                        <i class="fa-solid fa-square"></i>
+                        <b>Toll Included</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <img src="assets/border.jpg" alt="" class=" mx-auto mb-10 md:w-[50%] w-[80%] ">
+
+    <section id="aboutus" class="flex flex-wrap justify-center md:mb-28 mb-0 pt-20">
+        <div class="lg:w-1/2 flex justify-center rounded-lg items-center bg-white ">
+            <video src="assets/vid.mp4" autoplay loop controlsList="nodownload" muted id="about-video"
+                class="w-[80%] mx-10 rounded-lg md:border " poster="assets/thumbnail.png"></video>
+        </div>
+        <div class="mb-14 lg:mb-0 lg:w-1/2  md:mt-0 mt-5 lg:pl-24">
+            <h1
+                class="text-center max-w-xl text-[2.1rem] leading-none text-gray-900 lg:text-4xl md:text-center lg:text-left lg:leading-tight mb-5 font-sans font-semibold  ">
+                Who are we?</h1>
+            <p class="max-w-xl text-center text-gray-500 lg:text-left lg:max-w-md px-8 md:px-0">Our platform allows
+                drivers to
+                expand
+                their customer base while providing customers
+                with a convenient
+                booking experience. Safety and service quality are the sole responsibility of the drivers. Thank you for
+                choosing our platform for convenient and reliable cab bookings.
+            </p>
+            <div class="flex justify-center mt-8 lg:justify-start gap-12">
+                <a href="#contact-us"><button
+                        class="text-white bg-indigo-600 font-medium rounded-lg px-20 py-4 text-center hover:bg-indigo-500 hover:drop-shadow-md trasistion duration-300 ease-in-out">Contact
+                        Us</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonals" class="md:mx-20 mx-5 mb-20">
+        <h1 class="text-center text-3xl md:my-16 md:mb-10 mb-5 ">What our customers say</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide border rounded-lg py-10 md:h-[435px] h-[460px]">
+                    <div class="w-28 h-28 rounded-full overflow-y-hidden border mx-auto">
+                        <img class="border"
+                            src="https://static.vecteezy.com/system/resources/previews/002/275/847/original/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg"
+                            alt="" class="w-[100%]">
+                    </div>
+                    <h1 class="text-center text-2xl py-4">Mr. Rohan Gupta</h1>
+                    <p class="px-10 text-justify">"vcab has been our go-to choice for group outings around Bhopal. The
+                        drivers are accommodating, although coordinating multiple pickups can be challenging at times.
+                        Overall, vcab offers a reliable service for friends looking to explore the city together."</p>
+                </div>
+                <div class="swiper-slide border rounded-lg py-10 md:h-[435px] h-[460px]">
+                    <div class="w-28 h-28 rounded-full overflow-y-hidden border mx-auto">
+                        <img class="border"
+                            src="https://img.freepik.com/premium-vector/woman-avatar-profile-round-icon_24640-14042.jpg"
+                            alt="" class="w-[100%]">
+                    </div>
+                    <h1 class="text-center text-2xl py-4">Ms. Priya Sharma</h1>
+                    <p class="px-10 text-justify">"Vcab has made my commute to VIT Bhopal safe and stress-free. The
+                        drivers are professional, and the service is always reliable. I can focus on my studies without
+                        worrying about transportation."</p>
+                </div>
+                <div class="swiper-slide border rounded-lg py-10 md:h-[435px] h-[460px]">
+                    <div class="w-28 h-28 rounded-full overflow-y-hidden border mx-auto">
+                        <img class="border"
+                            src="https://th.bing.com/th/id/OIP.x7X2oAehk5M9IvGwO_K0PgHaHa?rs=1&pid=ImgDetMain" alt=""
+                            class="w-[100%]">
+                    </div>
+                    <h1 class="text-center text-2xl py-4">Mr. Rahul Mehta</h1>
+                    <p class="px-10 text-justify">"Vcab has been a game-changer for my daily commute to VIT Bhopal. The
+                        rides are safe, reliable. The drivers are courteous and professional. I
+                        highly recommend Vcab to anyone looking for a dependable cab service in Bhopal!"</p>
+                </div>
+                <div class="swiper-slide border rounded-lg py-10 md:h-[435px] h-[460px]">
+                    <div class="w-28 h-28 rounded-full overflow-y-hidden border mx-auto">
+                        <img class="border"
+                            src="https://static.vecteezy.com/system/resources/previews/002/002/257/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                            alt="" class="w-[100%]">
+                    </div>
+                    <h1 class="text-center text-2xl py-4">Ms. Ananya Verma</h1>
+                    <p class="px-10 text-justify">"Vcab has made my travels around Bhopal incredibly safe and
+                        stress-free. The drivers are always punctual and polite. Occasionally, the cars could be
+                        cleaner!"
+                    </p>
+                </div>
+                <div class="swiper-slide border rounded-lg py-10 md:h-[435px] h-[460px]">
+                    <div class="w-28 h-28 rounded-full overflow-y-hidden border mx-auto">
+                        <img class="border"
+                            src="https://th.bing.com/th/id/OIP.njIAgXZqcF6Oh2anRslaLwHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                            alt="" class="w-[100%]">
+                    </div>
+                    <h1 class="text-center text-2xl py-4 ">Ms. Neha Singh</h1>
+                    <p class="px-10 text-justify">"Vcab ensures my safety as a female student traveling around Bhopal.
+                        The drivers are respectful and the service is reliable. I
+                        appreciate vcab's commitment to female passengers' safety. I highly recommend it for a secure
+                        travel experience."</p>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-900 sm:items-center sm:pt-0 ">
+            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8 flex items-center ">
+                <div class="mt-8 overflow-hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-6 mr-2  bg-gray-800 sm:rounded-lg">
+                            <h1 class="text-4xl sm:text-5xl  text-white font-extrabold tracking-tight">
+                                Contact Us
+                            </h1>
+                            <p class="text-normal text-lg sm:text-2xl font-medium  text-gray-400 mt-2">
+                                Feel free to give us a call or send us an email with your questions or comments.
+                            </p>
+
+                            <div class="flex items-center mt-8 text-gray-400">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                                    VITB University,
+                                    Khothri-Kalan,
+                                    Bhopal
+                                </div>
+                            </div>
+
+                            <div class="flex items-center mt-4 text-gray-400">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                                    +91 76519 66824
+                                </div>
+                            </div>
+
+                            <div class="flex items-center mt-2 text-gray-400">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                                    vcabbook@gmail.com
+                                </div>
+                            </div>
+                            <div class="flex items-center mt-5 text-gray-600 dark:text-gray-400 ">
+                                <div class="ml-1 text-md tracking-wide font-semibold w-40 flex gap-5 items-center">
+                                    <a href="https://www.linkedin.com/company/vcab-book-cabs/" target="_blank"><svg
+                                            width='30px' height="30px" xmlns="http://www.w3.org/2000/svg"
+                                            aria-label="LinkedIn" role="img" viewBox="0 0 512 512" fill="#ffffff">
+                                            <rect width="512" height="512" rx="15%" fill="#0077b5" />
+                                            <circle cx="142" cy="138" r="37" />
+                                            <path stroke="#ffffff" stroke-width="66" d="M244 194v198M142 194v198" />
+                                            <path
+                                                d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+                                        </svg></a>
+                                    <a href="https://www.instagram.com/__vcab__/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                                        target="_blank">
+                                        <svg width="35px" height="35px" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2" y="2" width="28" height="28" rx="6"
+                                                fill="url(#paint0_radial_87_7153)" />
+                                            <rect x="2" y="2" width="28" height="28" rx="6"
+                                                fill="url(#paint1_radial_87_7153)" />
+                                            <rect x="2" y="2" width="28" height="28" rx="6"
+                                                fill="url(#paint2_radial_87_7153)" />
+                                            <path
+                                                d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+                                                fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                                                fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+                                                fill="white" />
+                                            <defs>
+                                                <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1"
+                                                    gradientUnits="userSpaceOnUse"
+                                                    gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
+                                                    <stop stop-color="#B13589" />
+                                                    <stop offset="0.79309" stop-color="#C62F94" />
+                                                    <stop offset="1" stop-color="#8A3AC8" />
+                                                </radialGradient>
+                                                <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1"
+                                                    gradientUnits="userSpaceOnUse"
+                                                    gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
+                                                    <stop stop-color="#E0E8B7" />
+                                                    <stop offset="0.444662" stop-color="#FB8A2E" />
+                                                    <stop offset="0.71474" stop-color="#E2425C" />
+                                                    <stop offset="1" stop-color="#E2425C" stop-opacity="0" />
+                                                </radialGradient>
+                                                <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1"
+                                                    gradientUnits="userSpaceOnUse"
+                                                    gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
+                                                    <stop offset="0.156701" stop-color="#406ADC" />
+                                                    <stop offset="0.467799" stop-color="#6A45BE" />
+                                                    <stop offset="1" stop-color="#6A45BE" stop-opacity="0" />
+                                                </radialGradient>
+                                            </defs>
+                                        </svg></a>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <form class="p-6 flex flex-col justify-center" autocomplete="off">
+                            <div class="flex flex-col">
+                                <label for="name" class="hidden">Full Name</label>
+                                <input type="name" name="name" id="name" placeholder="Full Name" required
+                                    class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 dark:text-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                            </div>
+                            <div class="flex flex-col mt-2">
+                                <label for="email" class="hidden">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email" required
+                                    class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 dark:text-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                            </div>
+
+                            <div class="flex flex-col mt-2">
+                                <label for="tel" class="hidden">Number</label>
+                                <input type="tel" name="tel" id="tel" maxlength="10" minlength="10" required
+                                    placeholder="Mobile Number"
+                                    class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 dark:text-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                            </div>
+
+                            <button type="submit"
+                                class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white">
+        <div class="container px-6 py-8 mx-auto">
+            <div class="flex flex-col items-center text-center">
+                <a href="#">
+                    <img class="mx-auto " src="assets/logo.png" width="20%" alt="">
+                </a>
+
+                <p class="max-w-md mx-auto mt-4 text-gray-500 dark:text-gray-400">Designed and Developed by Praveen.</p>
+
+                <div class="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
+                    <button
+                        class="w-full px-5 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md sm:mx-2 sm:order-2 sm:w-auto hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">Book
+                        Now</button>
+                </div>
+            </div>
+
+            <hr class="my-10 border-gray-200 dark:border-gray-700" />
+
+            <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+                <p class="text-sm text-gray-500">© Copyright 2024. All Rights Reserved.</p>
+
+                <div class="flex mt-3 -mx-2 sm:mt-0">
+                    <a href="#"
+                        class="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300"
+                        aria-label="Reddit"> Home </a>
+
+                    <a href="#"
+                        class="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300"
+                        aria-label="Reddit"> Privacy </a>
+
+                    <a href="#"
+                        class="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300"
+                        aria-label="Reddit"> Terms </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/files/swipper.js" defer></script>
+    <script src="assets/files/script.js" defer></script>
+    <script src="assets/files/price.js"></script>
+</body>
+
+</html>
